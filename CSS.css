@@ -67,7 +67,7 @@ div.calc	{border-top: #aaa 2px solid;border-right: #555 2px solid;
   			border-bottom: #555 2px solid;border-left: #aaa 2px solid;
 			border-radius:10px;padding:15px;width:275px;}
 
-td, th		{height:20px;width:auto;text-align:center;}
+div#footer.td, th		{height:20px;width:auto;text-align:center;}
 
 table		{font-size:18;}
 
