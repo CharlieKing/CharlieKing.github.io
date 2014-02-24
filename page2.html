@@ -1,52 +1,68 @@
-<HTML>
-<HEAD>
-<link rel="stylesheet" type="text/css" href="CSS.css"/>
-<script type="text/javascript" src="myFile.js" ></script>
-<TITLE>Charlie King Home</TITLE>
-<a href="/~kingcha"><input type="image" src="Charlie.png" align="left" height="150px" style="margin:10px;" onmouseover="changeImg.call(this)"
-onmouseout="changeBack.call(this)"/></a>
-</HEAD>
-<BODY>
 
-<div id="full container" style="width:100%">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-	  <div id="banner" class="banner">
-		<table class="banner">
-			<tr>	
-				<td class="banner">
-				<a id="bio" href="index.html" class="banner"
-					onmouseover="this.className='mouseon'" 
-					onmouseout="this.className='banner'">
-					Home</a><td>|</td></td>
-				<td class="banner">
-				<a id="resume" href="ResumeAutumn2013.pdf" class="banner"
-					onmouseover="this.className='mouseon'" 
-					onmouseout="this.className='banner'">
-					Resume</a><td>|</td></td>
-				<td class="banner">
-				<a id="blog" href="http://www.digitalliteracyblog.wordpress.com" class="banner"
-					onmouseover="this.className='mouseon'" 
-					onmouseout="this.className='banner'">
-					Blog</a><td>|</td></td>
-				<td class="banner">
-				<a id="email" href="mailto:king.1380@osu.edu" class="banner"
-					onmouseover="this.className='mouseon'" 
-					onmouseout="this.className='banner'">
-					Email</a></td>
-			</tr>
-		</table>
-	  </div>
-	  <div id="header" class="header">
-	    <H1>CHARLIE KING</H1>
-	    <SH>Student at The Ohio State University</SH>
-	  </div>
-<hr width="75%">
-<br>
-	<div id="left area" class="leftside">
-	<br>
-	</div>
+	<TITLE>Charlie King Home</TITLE>
 
-<div id="body" class="body" align="left" width="100%">
+	<!-- Original js file -->
+    <script type="text/javascript" src="myFile.js" ></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    
+    <!-- Original CSS document -->
+    <link rel="stylesheet" type="text/css" href="CSS.css"></link>
+    
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#830000;">
+      <div class="container">
+      <a class="brand" href="/~kingcha"><input type="image" src="Charlie.png" align="left" class="image" onmouseover="changeImg.call(this)"
+onmouseout="changeBack.call(this)"alt="Picture of Me"/></a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-brand" style="font-size:x-large;">Charlie King</p>
+        </div>
+        <div class="collapse navbar-collapse" style="font-size:large;">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ResumeAutumn2013.pdf">Resume</a></li>
+            <li><a id="email" href="mailto:Charliewking@outlook.com">Email</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        
+        <div id="body" class="body" align="left" width="100%">
 	<div class="big">
 	<UL>
 		<li>Personal Autobiography
@@ -102,9 +118,6 @@ onmouseout="changeBack.call(this)"/></a>
 			</li>
 			<li>
 			OSUMB iPad Project 2013<br>
-			<iframe width="420" height="315" 
-				src="//www.youtube.com/embed/arceUjGINx4?rel=0" 
-				frameborder="0" allowfullscreen></iframe>
 			</li>
 			<li>
 			
@@ -118,30 +131,31 @@ onmouseout="changeBack.call(this)"/></a>
 	</div><!--end big-->
 
 </div>
+    </div><!-- /.container -->
 
-<!-- ------------------------------------------------------------------------------ -->
-<div id="footer" class="footer">
-<br>
-<hr width="75%">
-<br>
-
-<table style="align:center;">
-	<tr>
-		<td><a href="ResumeAutumn2013.pdf">Current Resume</a><td>|</td></td>
-		<td><a href="http://www.digitalliteracyblog.wordpress.com">
-			My Digital Literacy Blog</A><td>|</td></td>
-		<td><a href="mailto:king.1380@osu.edu">king.1380@osu.edu</A><td>|</td></td>
-		<td><a href="mailto:charliewking@gmail.com">
-			charliewking@gmail.com</A><td>|</td></td>
-		<td><a href="http://www.linkedin.com/pub/charlie-king/56/a32/398">
-			LinkedIn</a></td>
-	</tr>
-</table>
-<br><br>
-</font>
-</div>
-</div>
+	<!-- Footer  -->
+	
+	<div id="footer">
+		<div class="container">
+			<p class="navbar-brand text-muted" style="text-decoration:none;">
+				<td><a href="ResumeAutumn2013.pdf">Resume</a>
+				<td>|</td></td>
+				<td><a href="http://www.digitalliteracyblog.wordpress.com">Digital Literacy Blog</A>
+				<td>|</td></td>
+				<td><a href="mailto:king.1380@osu.edu">OSU email</a>
+				<td>|</td></td>
+				<td><a href="mailto:charliewking@outlook.com">email</a>
+				<td>|</td></td>
+				<td><a href="http://www.linkedin.com/pub/charlie-king/56/a32/398">LinkedIn</a></td>
+    		</p>
+    	</div>
+    </div>
 
 
-</BODY>
-</HTML>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
