@@ -9,6 +9,7 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+      text-decoration:none;
 }
 body {
   margin: 0;
@@ -44,10 +45,12 @@ template {
 }
 a {
   background: transparent;
+  text-decoration:none;
 }
 a:active,
 a:hover {
   outline: 0;
+  text-decoration:none;
 }
 abbr[title] {
   border-bottom: 1px dotted;
