@@ -10,7 +10,12 @@ body		{background-color:#d8d8d8;}
 h1,th.head,sh 	{color:#424242;}
 sh		{font-size:20px;}
 
-button.text	{background:none;border:none;size:50%;}
+button.text	{	background:none;
+				border:none;
+				size:50%;
+				text-align:left;
+			}
+				
 button.square	{height:50px;width:50px;font-size:20px;}
 
 input		{-webkit-appearance:none;}
@@ -59,7 +64,7 @@ div.big		{background-color:white;padding:15px;padding-right:50px;
 
 div.banner 	{background-color:#990000;
 			height:50px;width:100%;color:#d8d8d8;}
-div.header 	{height:125px;overflow:auto;}
+div.header 	{overflow:auto;}
 div.leftside	{width:10%;float:left;}
 div.rightIntro	{float:left;width:35%;color:#424242;line-height:1.5;}
 div.leftIntro	{float:left;width:35%;}
