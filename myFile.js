@@ -7,9 +7,9 @@ function lightup(id){
 }
 
 function changeImg(){
-	this.setAttribute("src","Charlie2.png");
+	this.setAttribute("src","images/Charlie2.png");
 }
 
 function changeBack(){
-	this.setAttribute("src","Charlie.png");
+	this.setAttribute("src","images/Charlie.png");
 }
