@@ -4,9 +4,6 @@ body		{background-color:#d8d8d8;}
 .hidden 	{display:none;width:85%;}
 .visible	{display:all;}
 
-.nounderline{text-decoration: none}
-
-
 h1,th.head,sh 	{color:#424242;}
 sh		{font-size:20px;}
 
