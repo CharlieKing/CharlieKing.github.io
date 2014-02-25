@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
+    <link href="jumbotron-narrow.css" rel="stylesheet">
     
     <!-- Original CSS document -->
     <link rel="stylesheet" type="text/css" href="CSS.css"></link>
@@ -34,11 +35,11 @@
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#830000;">
+  
+  <div class="container">
+  
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#830000;">
       <div class="container">
-      <a class="brand" href="/~kingcha"><input type="image" src="Charlie.png" align="left" class="image" onmouseover="changeImg.call(this)"
-onmouseout="changeBack.call(this)"alt="Picture of Me"/></a>
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -46,11 +47,11 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/></a>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <p class="navbar-brand" style="font-size:x-large;">Charlie King</p>
+          <a class="navbar-brand" href="#">Charlie King</a>
         </div>
-        <div class="collapse navbar-collapse" style="font-size:large;">
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Bio</a></li>
             <li><a href="Resume.pdf">Resume</a></li>
             <li><a id="email" href="mailto:Charliewking@outlook.com">Email</a></li>
           </ul>
@@ -58,16 +59,16 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/></a>
       </div>
     </div>
 
-    <div class="container">
-
-      <div class="starter-template">
+      <div class="jumbotron" style="margin-top:50px;padding:25px;">
+        <h1>Charlie W. King</h1>
+        <input type="image" src="Charlie.png" class="image" onmouseover="changeImg.call(this)"
+onmouseout="changeBack.call(this)"alt="Picture of Me"/>
+        <p class="lead">Graduate of The Ohio State University<br>From Columbus, Ohio<br>Moving to Seattle, Washington Summer 2014</p>
+      </div>
         
-        <div id="body" class="body" align="left" width="100%">
-	<div class="big">
-	<UL>
-		<li>Personal Autobiography
-		<br> 
-		<UL>
+        <div class="jumbotron" style="text-align:left;padding:15px;">
+		<p>About me</p>
+			<ul>
 			<li>
 			Computer Information and Science - Graduating May 2014
 			</li>
@@ -80,16 +81,12 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/></a>
 			<li>
 			Ready to change the way people think about technology again
 			</li>
-		</UL>
-		</li>
-	</UL>
-	</div><!--end big-->
-<br><!------------------------------------------------->
-	<div class="big">
-	<UL>
-		<li>Technical Skills
-		<br> 
-		<UL>
+			</ul>
+		</div>
+	
+        <div class="jumbotron" style="text-align:left;padding:15px;">
+		<p>Technical Skills</p>
+			<ul>
 			<li>
 			Languages: Java, C++, C, C#, javascript, HTML, CSS, AngularJS, SQL, REGEX, Assembly Language X86
 			</li>
@@ -102,16 +99,11 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/></a>
 			<li>
 			Ready to change the way people think about technology again
 			</li>
-		</UL>
-		</li>
-	</UL>
-	</div><!--end big-->
+			</ul>
+		</div><!--end big-->
 
-<br><!-------------------------------------------->
-	<div class="big">
-	<UL>
-		<li>Projects
-		<br> 
+        <div class="jumbotron" style="text-align:left;padding:15px;">
+	      	<p>Projects </p>
 		<UL>
 			<li>
 			Community Shelter Board Mobile
@@ -126,30 +118,39 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/></a>
 			PayPal Menu - School project
 			</a></li>
 		</UL>
-		</li>
-	</UL>
-	</div><!--end big-->
-
-</div>
-    </div><!-- /.container -->
+		</div><!--end big-->
+	    
+        <div class="jumbotron" style="text-align:left;padding:15px;">
+		<p>Spent the beginning of 2013 working as the design editor for a book chronicling the past 135 years of The Ohio State University Marching Band</p>
+		<UL>
+		  <li>
+		    <a href="http://www.thebuckeyebattlecry.com/2013/06/a-sneak-preview-of-script-ohio-a-tradition-of-excellence/">
+		      A preview for the book, which released in September of 2013 </a>
+		  </li>
+		  <li>
+		  <a href="https://www.dropbox.com/s/q153dxzg0unn2a0/ScriptOhioBookDraftPart3.pdf">An early version of the book in PDF form (please do not duplicate this PDF)(also it is very large, you may not want to click this if you're not on wifi)</a>
+		  </li>
+		  <li>
+		  <a href="https://squareup.com/market/kappa-kappa-psi-at-osu">If you want to have a copy it's available for sale here.  Profits benefit the marching band</a>
+		  </li>
+		</UL>
+	 	</div><!--end big-->
 
 	<!-- Footer  -->
 	
-	<div id="footer">
-		<div class="container">
-			<p class="navbar-brand text-muted" style="text-decoration:none;">
-				<td><a href="ResumeAutumn2013.pdf">Resume</a>
+      <div class="footer">
+		<p class="navbar-brand text-muted" style="text-decoration:none;margin-left:auto;margin-right:auto;">
+				<td><a href="Autumn2013.pdf">Resume</a>
 				<td>|</td></td>
 				<td><a href="http://www.digitalliteracyblog.wordpress.com">Digital Literacy Blog</A>
-				<td>|</td></td>
-				<td><a href="mailto:king.1380@osu.edu">OSU email</a>
 				<td>|</td></td>
 				<td><a href="mailto:charliewking@outlook.com">email</a>
 				<td>|</td></td>
 				<td><a href="http://www.linkedin.com/pub/charlie-king/56/a32/398">LinkedIn</a></td>
     		</p>
-    	</div>
-    </div>
+      </div>
+
+    </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
