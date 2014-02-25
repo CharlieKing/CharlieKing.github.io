@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
+    <link href="jumbotron-narrow.css" rel="stylesheet">
     
     <!-- Original CSS document -->
     <link rel="stylesheet" type="text/css" href="CSS.css"></link>
@@ -36,11 +37,8 @@
   <body>
   
   <div class="container">
-  <input type="image" src="Charlie.png" align="left" class="image" onmouseover="changeImg.call(this)"
-onmouseout="changeBack.call(this)"alt="Picture of Me"/>
-	</div>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#830000;">
+  
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#830000;">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -49,9 +47,9 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <p class="navbar-brand" style="font-size:x-large;">Charlie King</p>
+          <a class="navbar-brand" href="#">Charlie King</a>
         </div>
-        <div class="collapse navbar-collapse" style="font-size:large;">
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="page2.html">Bio</a></li>
             <li><a href="Resume.pdf">Resume</a></li>
@@ -61,16 +59,23 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/>
       </div>
     </div>
 
+      <div class="jumbotron" style="margin-top:50px;">
+        <h1>Charlie W. King</h1>
+        <input type="image" src="Charlie.png" class="image" onmouseover="changeImg.call(this)"
+onmouseout="changeBack.call(this)"alt="Picture of Me"/>
+        <p class="lead">Graduate of The Ohio State University<br>From Columbus, Ohio<br>Moving to Seattle, Washington Summer 2014</p>
+      </div>
+
     <div class="container">
 
       <div class="starter-template">
         
         <div class="big">
-		<ul>
-			<li>Running list of web application projects:<br>
-			     <ul>
+		<p>Running list of web application projects:</p>
+			<ul>
 				<li><a href="http://www.cse.ohio-state.edu/~kingcha/Boggus/index.html">
-				In my web applications class my group and I redesigned a faculty member's page to reflect his position as the video game class instructor</a>
+					In my web applications class my group and I redesigned a faculty member's page to reflect 
+					his position as the video game class instructor</a>
 				</li>
 				<li><a href="http://www.cse.ohio-state.edu/~kingcha/calc.html">
 					Here is a Javascript calculator </a>and
@@ -80,63 +85,56 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/>
 				<li><a href="http://www.cse.ohio-state.edu/~kingcha/tutorialHTMLS/HtmlCssTutorial.htm">
 					A tutorial for CSE students who want to make a page like this one </a>
 				</li>
-			     </ul>
-			</li>
-		</ul>
-	</div><br>
+			</ul>
+		</div><br>
 	
-	  <div class="big">
-	    <UL>
-	      <li>Currently working on a project to bring iPads to The Ohio State University Marching Band <br> 
-		<UL>
-		  <li>
-		    <a href="http://www.businessweek.com/articles/2013-09-04/ohio-state-marching-band-plays-a-money-saving-tune">
-		    	BusinessWeek Magazine wrote an article about the project </a>
-		  </li>
-		  <li>
-		    <a href="http://thelantern.com/2013/04/ohio-state-marching-band-aims-to-drum-up-120k-for-ipads/"> 
-		    The Ohio State Student Run Newspaper The Lantern, also about the project </a>
-		  </li>
-		  <li>
-		    <a href="https://fisher.osu.edu/blogs/opex/2013/09/10/ipad-rollout-brings-new-operational-efficiencies-to-ohio-state-marching-band/"> 
-		    My partner in the project is a student in the Fisher College and an article on the project made their website </a>
-		  </li>
-		  <li>
-			<a href="http://chronicle.com/blogs/wiredcampus/ohio-state-u-band-marches-ahead-of-the-curve-with-ipads/46453"> 
-		The Chronicle of Higher Education covered the story recently   	
-			</a>
-		  </li>
-		</UL>
-	      </li>
-		</UL>
+	  	<div class="big">
+		<p>Currently working on a project to bring iPads to The Ohio State University Marching Band </p>
+			<ul>
+		  		<li>
+		    		<a href="http://www.businessweek.com/articles/2013-09-04/ohio-state-marching-band-plays-a-money-saving-tune">
+		    			BusinessWeek Magazine wrote an article about the project </a>
+		  		</li>
+		  		<li>
+		    		<a href="http://thelantern.com/2013/04/ohio-state-marching-band-aims-to-drum-up-120k-for-ipads/"> 
+		    			The Ohio State Student Run Newspaper The Lantern, also about the project </a>
+		  		</li>
+		 	 	<li>
+		    		<a href="https://fisher.osu.edu/blogs/opex/2013/09/10/ipad-rollout-brings-new-operational-efficiencies-to-ohio-state-marching-band/"> 
+		   		 		My partner in the project is a student in the Fisher College and an article on the project made their website </a>
+		  		</li>
+		  		<li>
+					<a href="http://chronicle.com/blogs/wiredcampus/ohio-state-u-band-marches-ahead-of-the-curve-with-ipads/46453"> 
+						The Chronicle of Higher Education covered the story recently   	
+					</a>
+		 	 	</li>
+			</ul>
 		</div><!--end big-->
 		<br>
 
-	      <div class="big">
-		<UL>
-	      <li>Spent the past two summers interning with Northwoods Consulting Partners in 2012 and JP Morgan Chase in 2013
+		<div class="big">
+	      	<p>Spent the past two summers interning with Northwoods Consulting Partners in 2012 and JP Morgan Chase in 2013 </p>
 		<UL>
 		  <li>
 		    <a href="http://www.dispatch.com/content/stories/local/2013/03/04/app-to-help-track-homeless.html">
 		    Before and during the JP Morgan internship I worked on a volunteer mobile App project I really enjoyed </a>
 		  </li>
 		  <li>
-		  <a href="http://shelterapp.appspot.com/#/home">
+		  	<a href="http://shelterapp.appspot.com/#/home">
 			The development version of the app</a>
 		  </li>
-		<li>My responsibility was designing the workflows, graphics and most of the interactive user interface of the app
-		</li>
-		<li>When tested with a small user group the app was described as informative and easy to use, despite the group having no prior instructions
-		  </li>
+			<li>
+				My responsibility was designing the workflows, graphics and most of the interactive user interface of the app
+			</li>
+			<li>
+				When tested with a small user group the app was described as informative and easy to use, despite the group having no prior instructions
+		  	</li>
 		</UL>
-	      </li>
-	</UL>
-	</div><!--end big-->
+		</div><!--end big-->
 	<br>
 	    
 	    <div class="big">
-	<UL>
-	      <li>Spent the beginning of 2013 working as the design editor for a book chronicling the past 135 years of The Ohio State University Marching Band
+		<p>Spent the beginning of 2013 working as the design editor for a book chronicling the past 135 years of The Ohio State University Marching Band</p>
 		<UL>
 		  <li>
 		    <a href="http://www.thebuckeyebattlecry.com/2013/06/a-sneak-preview-of-script-ohio-a-tradition-of-excellence/">
@@ -149,9 +147,7 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/>
 		  <a href="https://squareup.com/market/kappa-kappa-psi-at-osu">If you want to have a copy it's available for sale here.  Profits benefit the marching band</a>
 		  </li>
 		</UL>
-	      </li>
-	    </UL>
-	 </div><!--end big-->
+	 	</div><!--end big-->
         
       </div>
 
@@ -159,21 +155,17 @@ onmouseout="changeBack.call(this)"alt="Picture of Me"/>
 
 	<!-- Footer  -->
 	
-	<div id="footer">
-		<div class="container">
-			<p class="navbar-brand text-muted" style="text-decoration:none;">
+      <div class="footer">
+		<p class="navbar-brand text-muted" style="text-decoration:none;margin-left:auto;margin-right:auto;">
 				<td><a href="ResumeAutumn2013.pdf">Resume</a>
 				<td>|</td></td>
 				<td><a href="http://www.digitalliteracyblog.wordpress.com">Digital Literacy Blog</A>
-				<td>|</td></td>
-				<td><a href="mailto:king.1380@osu.edu">OSU email</a>
 				<td>|</td></td>
 				<td><a href="mailto:charliewking@outlook.com">email</a>
 				<td>|</td></td>
 				<td><a href="http://www.linkedin.com/pub/charlie-king/56/a32/398">LinkedIn</a></td>
     		</p>
-    	</div>
-    </div>
+      </div>
 
 
     <!-- Bootstrap core JavaScript
