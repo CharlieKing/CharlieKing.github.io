@@ -60,7 +60,7 @@ div.big		{background-color:white;padding:15px;padding-right:50px;
 		border-color: #424242 transparent transparent transparent;}
 
 div.banner 	{background-color:#990000;
-			height:50px;width:100%;color:#d8d8d8;}
+			height:auto;width:100%;color:#d8d8d8;}
 div.header 	{overflow:auto;}
 div.leftside	{width:10%;float:left;}
 div.rightIntro	{float:left;width:35%;color:#424242;line-height:1.5;}
