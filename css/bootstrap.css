@@ -14,6 +14,13 @@ html {
 body {
   margin: 0;
 }
+
+.jumbotron {
+  margin-top:20px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 article,
 aside,
 details,
@@ -309,6 +316,7 @@ figure {
 }
 img {
   vertical-align: middle;
+  max-width: 100%;
 }
 .img-responsive,
 .thumbnail > img,
