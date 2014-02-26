@@ -84,7 +84,7 @@
         <div class="item active">
           <div class="container">
             <div class="carousel-caption">
-            	<h1>Charlie and Ellie</h1>
+            	<h1>&nbsp;Charlie and Ellie</h1>
             	<a href="images/newyork/brooklynbridge.jpg"><input type="image" src="images/newyork/brooklynbridge.jpg" class="image" alt="Brooklyn Bridge"></a>
 				<p>New York City</p>
 				<h2>pictures and stories from our travels</h2>
@@ -94,18 +94,20 @@
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
-            	<a href="images/Charlie.jpg"><input type="image" src="images/Charlie.jpg" class="image" alt="Picture of Me"></a>
-            	<h1>Charlie and Ellie</h1>
-            	<p>pictures and stories about places we've been</p>
+            	<h1>&nbsp;Charlie and Ellie</h1>
+            	<a href="images/Charlie.jpg"><input type="image" src="images/seattle/spaceneedle.jpg" class="image" alt="Picture of Me"></a>
+            	<p>Seattle</p>
+            	<h2>pictures and stories from our travels</h2>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
+            	<h1>&nbsp;Charlie and Ellie</h1>
 				<a href="images/Charlie2.png"><input type="image" src="images/Charlie2.png" class="image" alt="Picture of Me"></a>
-            	<h1>Charlie and Ellie</h1>
-            	<p>pictures and stories about places we've been</p>
+            	<p>Chicago</p>
+            	<h2>pictures and stories from our travels</h2>
             </div>
           </div>
         </div>
@@ -125,22 +127,30 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
+        
+        <!-- New York City -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/newyork/brooklynpizza.jpg" style="height:140px;" alt="Generic placeholder image">
+          <img class="img-circle" src="images/newyork/brooklynpizza.jpg" style="height:140px;" alt="Brooklyn Pizza">
           <h2>New York City 2014</h2>
           <p>We decided to make a trip to NYC on MLK weekend before we moved too far away for it to be a simple trip.
           </p>
           <p><a class="btn btn-default" href="#NYC" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
+       
+        <!-- Seattle -->       
         <div class="col-lg-4">
-          <img class="img-circle" src="images/Charlie.png" style="height:140px;" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <img class="img-circle" src="images/seattle/horsefarm.jpg" style="height:140px;" alt="Horse Farm">
+          <h2>Seattle 2013</h2>
+          <p>Ellie had an internship with Boeing for the summer and I was still in Columbus but I made the flight out 
+          	for the 4th of July weekend.
+          </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
+        
+        <!-- Chicago -->        
         <div class="col-lg-4">
           <img class="img-circle" src="images/Charlie.png" style="height:140px;" alt="Generic placeholder image">
-          <h2>Heading</h2>
+          <h2>Chicago 2013</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
@@ -150,6 +160,8 @@
       <!-- START THE FEATURETTES -->
 
       <hr class="featurette-divider">
+
+<!-- New York City 2014 -->
 
       <div id="NYC" class="row featurette">
         <div class="col-md-7">
@@ -167,26 +179,106 @@
       </div>
 
       <hr class="featurette-divider">
+      
+<!-- Seattle Summer 2013 -->
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        	<div id="SeattleCarousel" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+      <ol class="carousel-indicators" style="background:none;">
+        <li data-target="#SeattleCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#SeattleCarousel" data-slide-to="1"></li>
+        <li data-target="#SeattleCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+            	<a href="images/newyork/brooklynbridge.jpg">
+            		<img class="featurette-image img-responsive" src="images/seattle/pikeplace1.jpg" alt="Pike Place Market">
+            	</a>
+				<h2>Pike Place Market</h2>
+        </div>
+        <div class="item">
+            	<a href="images/Charlie.jpg">
+            		<img class="featurette-image img-responsive" src="images/seattle/horsefarm.jpg" alt="Pike Place Market">
+            	</a>
+            	<h2>Horse Farm</h2>
+        </div>
+        <div class="item">
+				<a href="images/Charlie2.png">
+					<img class="featurette-image img-responsive" src="images/seattle/spaceneedle.jpg" alt="Pike Place Market">
+				</a>
+            	<h2>Space Needle</h2>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#SeattleCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#SeattleCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+        
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Seattle<span class="text-muted">July 2013</span></h2>
+          <p class="lead">
+          Ellie had an internship with Boeing for the summer and I was still in Columbus but I made the flight out 
+          	for the 4th of July weekend.  Beautiful weather, a few happy gatherings with friends from home and some ubiquitous
+          	tourist stops like the Pike Place Market and the Space Needle made the trip a memorable one.  It can't be overstated 
+          	how much this trip contributed to our decision to move to Seattle after graduation.
+          </p>
         </div>
       </div>
 
       <hr class="featurette-divider">
+      
+<!-- Chicago Spring 2013 -->
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <h2 class="featurette-heading">Chicago<span class="text-muted">March 2013</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+    <div id="ChicagoCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#ChicagoCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ChicagoCarousel" data-slide-to="1"></li>
+        <li data-target="#ChicagoCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="container">
+            <div class="carousel-caption">
+            	<h1>&nbsp;Charlie and Ellie</h1>
+            	<a href="images/newyork/brooklynbridge.jpg"><input type="image" src="images/newyork/brooklynbridge.jpg" class="image" alt="Brooklyn Bridge"></a>
+				<p>New York City</p>
+				<h2>pictures and stories from our travels</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+            	<h1>&nbsp;Charlie and Ellie</h1>
+            	<a href="images/Charlie.jpg"><input type="image" src="images/seattle/spaceneedle.jpg" class="image" alt="Picture of Me"></a>
+            	<p>Seattle</p>
+            	<h2>pictures and stories from our travels</h2>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+            	<h1>&nbsp;Charlie and Ellie</h1>
+				<a href="images/Charlie2.png"><input type="image" src="images/Charlie2.png" class="image" alt="Picture of Me"></a>
+            	<p>Chicago</p>
+            	<h2>pictures and stories from our travels</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#ChicagoCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#ChicagoCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
         </div>
       </div>
 
