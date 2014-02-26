@@ -82,31 +82,28 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-            	<input type="image" src="images/Charlie.png" class="image" alt="Picture of Me">
-            	<h1>Charlie and Ellie's Travels Around the World</h1>
+            	<a href="images/band1.jpg"><input type="image" src="images/band1.jpg" class="image" alt="Picture of Me">
+            	<h1>Charlie and Ellie's Travels Around the World</h1></a>
             	<p>Follow along with us with pictures and stories about places we've been</p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-            	<input type="image" src="images/Charlie.png" class="image" alt="Picture of Me">
-        		<h1>Charlie and Ellie's Travels Around the World</h1>
+            	<a href="images/Charlie.jpg"><input type="image" src="images/Charlie.jpg" class="image" alt="Picture of Me">
+        		<h1>Charlie and Ellie's Travels Around the World</h1></a>
             	<p>Follow along with us with pictures and stories about places we've been</p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-				<input type="image" src="images/Charlie.png" class="image" alt="Picture of Me">
-        		<h1>Charlie and Ellie's Travels Around the World</h1>
+				<a href="images/Charlie2.png"><input type="image" src="images/Charlie2.png" class="image" alt="Picture of Me">
+        		<h1>Charlie and Ellie's Travels Around the World</h1></a>
             	<p>Follow along with us with pictures and stories about places we've been</p>
             </div>
           </div>
@@ -207,5 +204,18 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
     <script src="js/myscript.js"></script>
+    
+    <script type="text/javascript">// <![CDATA[
+jQuery(document).ready(function(){
+...	
+	jQuery("#myCarousel").touchwipe({
+          wipeLeft: function() { jQuery("#myCarousel").carousel('next'); },
+          wipeRight: function() { jQuery("#myCarousel").carousel('prev'); },
+          min_move_x: 20,
+          preventDefaultEvents: true
+	});
+});
+// ]]></script>
+
   </body>
 </html>
