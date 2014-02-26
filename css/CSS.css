@@ -57,6 +57,10 @@ a.mouseon	{color:#FFFFFF;text-decoration:none;}
 
 ul 		{line-height:1.5;}
 
+h2	{
+	text-align:center;
+}
+
 div.big		{background-color:white;padding:15px;padding-right:50px;
 			box-shadow: 2px 2px 2px #888888;
 			width:100%;border-radius:4px;}

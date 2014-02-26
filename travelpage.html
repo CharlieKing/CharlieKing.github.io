@@ -84,7 +84,7 @@
         <div class="item active">
           <div class="container">
             <div class="carousel-caption">
-            	<h1>Charlie and Ellie Travel</h1>
+            	<h1>Travels</h1>
             	<a href="images/newyork/brooklynbridge.jpg"><input type="image" src="images/newyork/brooklynbridge.jpg" class="image" alt="Brooklyn Bridge"></a>
 				<p>New York City</p>
 				<h2>pictures and stories from our travels</h2>
@@ -94,7 +94,7 @@
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
-            	<h1>&nbsp;Charlie and Ellie</h1>
+            	<h1>Travels</h1>
             	<a href="images/Charlie.jpg"><input type="image" src="images/seattle/spaceneedle.jpg" class="image" alt="Picture of Me"></a>
             	<p>Seattle</p>
             	<h2>pictures and stories from our travels</h2>
@@ -104,7 +104,7 @@
         <div class="item">
           <div class="container">
             <div class="carousel-caption">
-            	<h1>&nbsp;Charlie and Ellie</h1>
+            	<h1>Travels</h1>
 				<a href="images/Charlie2.png"><input type="image" src="images/Charlie2.png" class="image" alt="Picture of Me"></a>
             	<p>Chicago</p>
             	<h2>pictures and stories from our travels</h2>
@@ -139,12 +139,12 @@
        
         <!-- Seattle -->       
         <div class="col-lg-4">
-          <img class="img-circle" src="images/seattle/horsefarm.jpg" style="height:140px;" alt="Horse Farm">
+          <img class="img-circle" src="images/seattle/horsefarmthumb.jpg" style="height:140px;" alt="Horse Farm">
           <h2>Seattle 2013</h2>
           <p>Ellie had an internship with Boeing for the summer and I was still in Columbus but I made the flight out 
           	for the 4th of July weekend.
           </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#Seattle" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         
         <!-- Chicago -->        
@@ -152,18 +152,18 @@
           <img class="img-circle" src="images/Charlie.png" style="height:140px;" alt="Generic placeholder image">
           <h2>Chicago 2013</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#Chicago" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
-
 <!-- New York City 2014 -->
 
-      <div id="NYC" class="row featurette">
+      <hr id="NYC" class="featurette-divider">
+
+      <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">New York City<span class="text-muted">January 2014</span></h2>
           <p class="lead">
@@ -174,13 +174,56 @@
           </p>
           </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/newyork/statueofliberty.png" alt="The Statue of Liberty">
+        	<div id="NYCCarousel" class="carousel slide" data-ride="carousel" >
+      <!-- Picture Section -->  	
+      <!-- Indicators -->
+      <ol class="carousel-indicators" style="background:none;">
+        <li data-target="#NYCCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#NYCCarousel" data-slide-to="1"></li>
+        <li data-target="#NYCCarousel" data-slide-to="2"></li>
+        <li data-target="#NYCCarousel" data-slide-to="3"></li>
+        <li data-target="#NYCCarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+            	<a href="images/newyork/goldstatue.jpg">
+            		<img class="featurette-image img-responsive" src="images/newyork/goldstatue.jpg" alt="Sherman Statue">
+            	</a>
+				<h2>William Tecumseh Sherman</h2>
+        </div>
+        <div class="item">
+            	<a href="images/newyork/grandcentral.jpg">
+            		<img class="featurette-image img-responsive" src="images/newyork/grandcentral.jpg" alt="Grand Central Station">
+            	</a>
+            	<h2>Grand Central</h2>
+        </div>
+        <div class="item">
+				<a href="images/newyork/museuminside.jpg">
+					<img class="featurette-image img-responsive" src="images/newyork/museuminside.jpg" alt="Natual History Museum">
+				</a>
+            	<h2>Natural History Museum</h2>
+        </div>
+                <div class="item">
+				<a href="images/newyork/worldtrade.jpg">
+					<img class="featurette-image img-responsive" src="images/newyork/worldtrade.jpg" alt="World Trade Center Memorial">
+				</a>
+            	<h2>World Trade Center Memorial</h2>
+        </div>
+                <div class="item">
+				<a href="images/newyork/centralpark3.jpg">
+					<img class="featurette-image img-responsive" src="images/newyork/centralpark3.jpg" alt="Central Park">
+				</a>
+            	<h2>Central Park</h2>
         </div>
       </div>
+      <a class="left carousel-control" href="#NYCCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#NYCCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+      </div>
 
-      <hr class="featurette-divider">
-      
 <!-- Seattle Summer 2013 -->
+
+      <hr id="Seattle" class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-5">
@@ -227,9 +270,11 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
+     
       
 <!-- Chicago Spring 2013 -->
+
+ <hr id="Chicago" class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
