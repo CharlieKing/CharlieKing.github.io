@@ -130,6 +130,7 @@ function DisplayWinner(bool){
 			document.getElementById(i).className = "draw";
 		}
 		document.getElementById("winbox").value = "Draw";
+		document.getElementById("drawCol").value ++;
 		setTimeout(function() {refreshGame("game");},1250);
 	}
 }
@@ -210,6 +211,10 @@ function resetScore(){
 	<tr>
         	<td style="text-align:left;"><p>Computer Wins:</p></td>
         	<td><input id="lossCol" class="score" value="0"></input></td>
+	</tr>
+	<tr>
+        	<td style="text-align:left;"><p>Draws:</p></td>
+        	<td><input id="drawCol" class="score" value="0"></input></td>
 	</tr>
 </table>
 
