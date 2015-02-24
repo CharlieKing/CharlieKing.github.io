@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Icon Point of Sale</title>
+	
+	<!-- Scripts to be included -->
+    <script src="js/angular.js"></script>
+    <script src="js/script.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+	<script src="js/ui-bootstrap-custom-0.12.0.js"></script>
+	<script src="js/ui-bootstrap-custom-tpls-0.12.0.js"></script>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+    <link href="css/MainPageCss.css" rel="stylesheet" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/jumbotron-narrow.css" rel="stylesheet" />
+
+</head>
+<body ng-app="cheersCaitlin" ng-controller="AccordionDemoCtrl">
+<div class="container">
+    <div class="jumbotron">
+		<input class="image" type="image" src="images/caitlin1.png">
+	</div>
+
+	<h1 class="pagetitle"> Caitlin Langfitt </h1>
+	<h4 class="subtitle"> Taking On the World </h4>
+		
+	<hr class="fancy">
+	
+	<h2 class="pagetitle">About Me</h2>
+	
+	<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+	<p class="shortparagraph" >
+		I am by far the coolest ever. Everyone should try to be as cool as me.
+		It's always about me because I rock. I can't even think about anything else to write about.
+	</p>
+	<br><a data-toggle="modal" data-target=".resume-modal-lg" href=""><h4 class="pagetitle">View My Resume</h4></a>
+
+	<div class="modal fade resume-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+		<div class="modal-content" style="padding:5%">
+			<a style="float:right;" data-toggle="modal" data-target=".resume-modal-lg">
+				<input class="tiny-image" type="image" src="images/x.jpg"></a>
+			<div ng-repeat="category in categories" class="resume">
+				<h3 class="resume">{{category.category}}</h3>
+				<div ng-repeat="item in category.items">
+					<div class="row">
+						<div class="col-md-4"><h5>{{item.title}}</h5></div>
+						<div class="col-md-4"><h5 class="resume" >{{item.location}}</h5></div>
+						<div class="col-md-4"><h5 class="resume" >{{item.daterange}}</h5></div>
+					</div>
+					<ul ng-repeat="line in item.lines">
+						<li class="resume">{{line}}</li>
+					</ul>
+				</div>
+				<br><hr class="fancy">
+			</div>
+			<br><a href="files/resume.pdf"><h4 class="pagetitle">Download Resume</h4></a>
+		</div>
+	  </div>
+	</div>
+	
+	</div>
+	</div>
+	
+	<hr class="fancy">
+
+	<div class="container marketing" >
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-md-4 interests" ng-repeat="interest in interests" >
+          <input class="md-image" type="image" src="{{interest.image}}">
+          <a href="{{interest.linkURL}}"><h3 class="subtitle">{{interest.title}}</h3></a>
+          <p>{{interest.content}}</p>
+          
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	</div>
+	
+	<!--                              new stuff               -->
+	<hr class="fancy">
+
+	<div class="container marketing" >
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-md-4 interests" ng-repeat="sample in samples" >
+          <input class="md-image" type="image" src="{{sample.image}}">
+          <a data-toggle="modal" data-target=".{{sample.number}}-modal-lg" href=""><h3 class="subtitle">{{sample.title}}</h3></a>
+          
+	<div class="modal fade {{sample.number}}-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+		<div class="modal-content" style="padding:5%">
+			<a style="float:right;" data-toggle="modal" data-target=".{{sample.number}}-modal-lg">
+				<input class="tiny-image" type="image" src="images/x.jpg"></a>
+			<div>
+				<div ng-repeat="paragraph in sample.contents"><p>{{paragraph}}</p><br></div>
+			</div>
+		</div>
+	  </div>
+	</div>
+		  
+		  
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	</div>
+	
+<!--                              new stuff               -->
+
+	
+	<hr class="fancy">
+	<h2 class="pagetitle">Writing Samples</h2><br>
+	
+	<div>
+		<div>
+		  <accordion close-others="oneAtATime" >
+			<accordion-group heading="{{sample.title}}" ng-repeat="sample in samples">
+			  <div ng-repeat="paragraph in sample.contents"><p>{{paragraph}}</p><br></div>
+			</accordion-group>
+		  </accordion>
+		</div>
+	</div>
+	
+	<h2 class="pagetitle">References</h2>
+	
+	<p class="shortparagraph">
+		Those will go here 
+	</p>
+	
+	
+	<!--  Contacts Section  -->
+	<hr class="fancy">
+	<h2 class="pagetitle">Contacts</h2>
+	<div class="container marketing" >
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row" >
+        <div class="col-md-4 interests" ng-repeat="contact in contacts" >
+			<a style="color:{{contact.color}};" href="{{contact.content}}" role="button">
+				<input class="sm-image" type="image" src="{{contact.image}}">
+			</a>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	 </div>
+
+</div>
+</body>
+</html>
