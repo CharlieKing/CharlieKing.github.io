@@ -41,7 +41,8 @@
 		<h2 class="subtitle">{{category.category}}</h2>
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-md-4 interests" ng-repeat="item in category.items">
+        <div class="col-md-4 interests item-container " ng-repeat="item in category.items" 
+		ng-click="addItem(item)" role="button" >
 		
 		<div class="modal fade beer-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
@@ -59,10 +60,9 @@
 		
 		<!--<a data-toggle="modal" data-target=".beer-modal-lg">click</a>-->
           <h4 class="subtitle">{{item.title}}</h4>
-		  <div style="min-height:75px;" ng-repeat="line in item.lines">
+		  <div ng-repeat="line in item.lines">
 			<p class="resume">{{line}}</p>
 		  </div>
-		  <button type="button" class="btn btn-info" ng-click="addItem(item)">Order {{item.title}}</button>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 </div>

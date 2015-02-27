@@ -82,6 +82,9 @@ input.tiny-image		{
 .interests {
 	text-align:center;
 }
+div.interets:hover {
+	background-color:#aaaaaa !important;
+}
 
 body {
     opacity: 1;
