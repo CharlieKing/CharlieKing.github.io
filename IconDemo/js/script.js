@@ -3,6 +3,7 @@
 angular.module('iconDemo', ['ui.bootstrap'])
   .controller('iconDemoCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
   
+  
   $scope.categories = [
 		{ category: 'Beers', items: [
 			{ title: 'Beard Grower',
@@ -83,6 +84,7 @@ angular.module('iconDemo', ['ui.bootstrap'])
 			}
 		]}
 	];
+	
 	
 	$scope.items = [];
 	$scope.totalPrice = 0;
