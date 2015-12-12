@@ -51,7 +51,7 @@ table.banner	{color:#d8d8d8;margin:auto;float:left;
 
 td.banner	{width:25%;margin-left:auto;margin-right:auto;}
 
-a 		{color:#990000;text-decoration:none;}
+a 		{color:#000000;text-decoration:none;}
 a.banner	{color:#d8d8d8;text-decoration:none;}
 a.mouseon	{color:#FFFFFF;text-decoration:none;}
 
@@ -71,7 +71,7 @@ div.big		{background-color:white;padding:15px;padding-right:50px;
 		border-width: 20px 20px 0 20px;
 		border-color: #424242 transparent transparent transparent;}
 
-div.banner 	{background-color:#990000;
+div.banner 	{background-color:#006633;
 			height:auto;width:100%;color:#d8d8d8;}
 div.header 	{overflow:auto;}
 div.leftside	{width:10%;float:left;}
